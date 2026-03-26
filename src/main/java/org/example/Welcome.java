@@ -7,9 +7,14 @@ import java.time.DayOfWeek;
 
 public class Welcome {
 
+    private Clock clock;
+    public Welcome(Clock clock) {
+        this.clock = clock;
+    }
+
 
     public String getMessage(){
-        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime now = clock.now();
 
         int hour = now.getHour();
         DayOfWeek day = now.getDayOfWeek();
