@@ -1,6 +1,8 @@
 package org.example;
 import java.time.LocalDateTime;
 
+// Faux Clock utilisé uniquement pour les tests.
+
 public class FakeClock implements Clock {
 
     private final LocalDateTime fakeTime;

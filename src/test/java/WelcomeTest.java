@@ -13,8 +13,10 @@ public class WelcomeTest {
 
         FakeClock clock = new FakeClock(LocalDateTime.of(2024, 3, 20, 10, 0));
 
+        // Injection du faux temps
         Welcome welcome = new Welcome(clock);
 
+        // Appel de la méthode
         String message = welcome.getMessage();
 
         assertEquals("Bonjour", message);
