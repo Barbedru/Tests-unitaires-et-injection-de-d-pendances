@@ -2,6 +2,6 @@ package org.example;
 
 import java.time.LocalDateTime;
 
-public interface TimeProvider {
+public interface Clock {
     LocalDateTime now();
 }
