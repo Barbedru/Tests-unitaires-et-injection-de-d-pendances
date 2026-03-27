@@ -7,7 +7,7 @@ import java.time.DayOfWeek;
 
 public class Welcome {
 
-    // Dépendance injectée (injection de dépendance)
+    // Dépendance injectée
     private Clock clock;
 
     /**
@@ -23,7 +23,7 @@ public class Welcome {
 
 
     public String getMessage(){
-        // On récupère l'heure via la dépendance (et non directement !)
+        // On récupère l'heure via la dépendance
         LocalDateTime now = clock.now();
 
         int hour = now.getHour();
