@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class WelcomeTest {
 
     @Test
+    //Vendredi 10H
     void testsMorningWeek() {
 
         FakeClock clock = new FakeClock(LocalDateTime.of(2026, 3, 27, 10, 0));
@@ -23,6 +24,7 @@ public class WelcomeTest {
     }
 
     @Test
+    //Vendredri 15H
     void testsAfternoonWeek() {
         FakeClock clock = new FakeClock(LocalDateTime.of(2026, 3, 27, 15, 0));
 
@@ -32,6 +34,7 @@ public class WelcomeTest {
     }
 
     @Test
+    //Mardi 21H
     void testsEveningWeek(){
         FakeClock clock = new FakeClock(LocalDateTime.of(2026, 3, 25, 21, 0));
 
@@ -41,6 +44,7 @@ public class WelcomeTest {
     }
 
     @Test
+    //Samedi 10H
     void testsWeekend() {
 
         FakeClock clock = new FakeClock(LocalDateTime.of(2026, 3, 28, 10, 0));
